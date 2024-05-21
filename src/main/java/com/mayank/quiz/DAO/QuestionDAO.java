@@ -10,5 +10,6 @@ import com.mayank.quiz.DTO.Question;
 @Repository
 public interface QuestionDAO extends JpaRepository<Question, Integer>{
 //	public List<Question> findAll();
+	public List<Question> findByCategory(String category);
 
 }
