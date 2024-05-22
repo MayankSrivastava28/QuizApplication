@@ -21,4 +21,10 @@ public class QuestionService {
 		return questionDao.findByCategory(category);
 	}
 
+	public String postQuestion(Question question) {
+		// TODO Auto-generated method stub
+		questionDao.save(question);
+		return "Success";
+	}
+
 }
